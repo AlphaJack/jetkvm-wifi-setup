@@ -5,7 +5,7 @@ Static site without backend, works in Chrome and Edge desktop and Android.
 
 Unofficial community tool, not affiliated with JetKVM.
 
-Live: https://alphajack.github.io/jetkvm-wifi-setup/
+Official setup page: https://jetkvm.com/wireless
 
 ## Commands
 
