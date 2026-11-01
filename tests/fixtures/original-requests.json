@@ -1,0 +1,498 @@
+{
+  "source": "https://jetkvm.com/assets/wireless-Dx2CSA5q.js",
+  "sha256": "4c7770339f20dcb288a015c8bdd1753e2c0a21da0f736329e8ad56d7f4daec29",
+  "recordedAt": "2026-11-01T18:39:43.343Z",
+  "scenarios": {
+    "setup code, scan, join": {
+      "requests": [
+        [
+          "proto-ver",
+          "v1.1"
+        ],
+        [
+          "session",
+          0,
+          1
+        ],
+        [
+          "session",
+          2,
+          1
+        ],
+        [
+          "saved",
+          "{\"op\":\"list\"}"
+        ],
+        [
+          "scan",
+          "520418032078"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "080472021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408041002"
+        ],
+        [
+          "scan",
+          "52022078"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "080472021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408041002"
+        ],
+        [
+          "config",
+          "080262100a036c61621209736563726574207077"
+        ],
+        [
+          "config",
+          "08047200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ]
+      ],
+      "result": {
+        "info": {
+          "needsPop": true,
+          "canScan": true,
+          "mac": "AA:BB:CC:DD:EE:0F",
+          "savedNetworks": true
+        },
+        "saved": {
+          "names": [
+            "home",
+            "office"
+          ],
+          "max": 3
+        },
+        "nets": [
+          [
+            "home",
+            -40,
+            [
+              "2.4 GHz",
+              "5 GHz"
+            ],
+            true,
+            "01:02:03:04:05:06",
+            6
+          ],
+          [
+            "lab",
+            -55,
+            [
+              "5 GHz"
+            ],
+            true,
+            "01:02:03:04:05:95",
+            149
+          ],
+          [
+            "cafe",
+            -70,
+            [
+              "2.4 GHz"
+            ],
+            false,
+            "01:02:03:04:05:01",
+            1
+          ],
+          [
+            "neighbour",
+            -85,
+            [
+              "2.4 GHz"
+            ],
+            true,
+            "01:02:03:04:05:0b",
+            11
+          ]
+        ],
+        "status": {
+          "state": "connected",
+          "ip": "192.168.1.50",
+          "ssid": "lab"
+        }
+      }
+    },
+    "wrong setup code": {
+      "requests": [
+        [
+          "proto-ver",
+          "v1.1"
+        ],
+        [
+          "session",
+          0,
+          1
+        ],
+        [
+          "session",
+          2,
+          1
+        ]
+      ],
+      "result": {
+        "info": {
+          "needsPop": true,
+          "canScan": true,
+          "mac": "AA:BB:CC:DD:EE:0F",
+          "savedNetworks": true
+        },
+        "rejected": true
+      }
+    },
+    "no setup code, no saved networks": {
+      "requests": [
+        [
+          "proto-ver",
+          "v1.1"
+        ],
+        [
+          "session",
+          0,
+          1
+        ],
+        [
+          "session",
+          2,
+          1
+        ],
+        [
+          "scan",
+          "520418032078"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "080472021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408041002"
+        ],
+        [
+          "scan",
+          "52022078"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "080472021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408021002"
+        ],
+        [
+          "scan",
+          "08026200"
+        ],
+        [
+          "scan",
+          "0804720408041002"
+        ],
+        [
+          "config",
+          "0802620a0a04686f6d6512027077"
+        ],
+        [
+          "config",
+          "08047200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ]
+      ],
+      "result": {
+        "info": {
+          "needsPop": false,
+          "canScan": true,
+          "mac": "AA:BB:CC:DD:EE:0F",
+          "savedNetworks": false
+        },
+        "nets": [
+          [
+            "home",
+            -40,
+            [
+              "2.4 GHz",
+              "5 GHz"
+            ],
+            true,
+            "01:02:03:04:05:06",
+            6
+          ],
+          [
+            "lab",
+            -55,
+            [
+              "5 GHz"
+            ],
+            true,
+            "01:02:03:04:05:95",
+            149
+          ],
+          [
+            "cafe",
+            -70,
+            [
+              "2.4 GHz"
+            ],
+            false,
+            "01:02:03:04:05:01",
+            1
+          ],
+          [
+            "neighbour",
+            -85,
+            [
+              "2.4 GHz"
+            ],
+            true,
+            "01:02:03:04:05:0b",
+            11
+          ]
+        ],
+        "status": {
+          "state": "connected",
+          "ip": "192.168.1.50",
+          "ssid": "home"
+        }
+      }
+    },
+    "wrong Wi-Fi password": {
+      "requests": [
+        [
+          "proto-ver",
+          "v1.1"
+        ],
+        [
+          "session",
+          0,
+          1
+        ],
+        [
+          "session",
+          2,
+          1
+        ],
+        [
+          "config",
+          "0802620c0a036c6162120577726f6e67"
+        ],
+        [
+          "config",
+          "08047200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ]
+      ],
+      "result": {
+        "status": {
+          "state": "failed",
+          "reason": "auth"
+        }
+      }
+    },
+    "network not found": {
+      "requests": [
+        [
+          "proto-ver",
+          "v1.1"
+        ],
+        [
+          "session",
+          0,
+          1
+        ],
+        [
+          "session",
+          2,
+          1
+        ],
+        [
+          "config",
+          "080262090a0463616665120178"
+        ],
+        [
+          "config",
+          "08047200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ]
+      ],
+      "result": {
+        "status": {
+          "state": "failed",
+          "reason": "not-found"
+        }
+      }
+    },
+    "saved networks": {
+      "requests": [
+        [
+          "proto-ver",
+          "v1.1"
+        ],
+        [
+          "session",
+          0,
+          1
+        ],
+        [
+          "session",
+          2,
+          1
+        ],
+        [
+          "saved",
+          "{\"op\":\"list\"}"
+        ],
+        [
+          "saved",
+          "{\"op\":\"join\",\"ssid\":\"home\"}"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "config",
+          "5200"
+        ],
+        [
+          "saved",
+          "{\"op\":\"forget\",\"ssid\":\"old\"}"
+        ],
+        [
+          "saved",
+          "{\"op\":\"forget\",\"ssid\":\"nope\"}"
+        ],
+        [
+          "saved",
+          "{\"op\":\"list\"}"
+        ]
+      ],
+      "result": {
+        "before": {
+          "names": [
+            "home",
+            "office",
+            "old"
+          ],
+          "max": 3
+        },
+        "joined": {
+          "state": "connected",
+          "ip": "192.168.1.50",
+          "ssid": "home"
+        },
+        "forgetMissing": true,
+        "after": {
+          "names": [
+            "home",
+            "office"
+          ],
+          "max": 3
+        }
+      }
+    }
+  }
+}

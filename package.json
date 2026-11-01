@@ -1,0 +1,25 @@
+{
+  "name": "jetkvm-wifi-setup",
+  "private": true,
+  "description": "Wi-Fi setup over Web Bluetooth for the JetKVM Mini W",
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vp build",
+    "check": "vp check",
+    "test": "vp test",
+    "test:parity": "vp build && PARITY=1 vp test --project parity",
+    "record": "vpx tools/record-original.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/web-bluetooth": "0.0.22",
+    "@vitest/browser-playwright": "5.0.5",
+    "playwright": "1.64.1",
+    "vite-plus": "1.4.0"
+  },
+  "engines": {
+    "node": "^22.18.0 || ^24.11.0 || >=26.0.0"
+  },
+  "packageManager": "pnpm@12.15.0"
+}

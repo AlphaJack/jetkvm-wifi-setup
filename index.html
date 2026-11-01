@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="Connect your JetKVM Mini to your wireless network in about two minutes, straight from this browser."
+    />
+    <title>Wireless setup | JetKVM</title>
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="/logo.svg" alt="" width="40" height="40" />
+        <div>
+          <h1>Wi-Fi setup over Bluetooth</h1>
+          <p class="sub">Supported: JetKVM Mini W</p>
+        </div>
+      </header>
+      <div
+        id="progress"
+        class="progress"
+        role="progressbar"
+        aria-label="Setup progress"
+        aria-valuemin="1"
+        aria-valuemax="4"
+        hidden
+      >
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <section id="card" aria-live="polite"></section>
+      <p class="foot">
+        Everything happens locally between this browser and the device.<br />
+        Unofficial community tool, not affiliated with JetKVM.
+      </p>
+      <p class="foot">
+        <a id="save" href="./" download="jetkvm-wifi-setup.html">Download this page</a>
+        to keep a copy that works offline even if this site goes away.
+      </p>
+    </main>
+    <noscript><p class="problem">This page needs JavaScript.</p></noscript>
+  </body>
+</html>
